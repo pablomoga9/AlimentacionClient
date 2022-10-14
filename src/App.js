@@ -23,7 +23,7 @@ function App() {
   //Checkear usuario
   const checkUser = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/checkUser', { withCredentials: true });
+      const res = await axios.get('https://gentle-gorge-77050.herokuapp.com/api/checkUser', { withCredentials: true });
       const userToken = res.data.msg.substr(6, res.data.msg.length);
       const user = await jwtDecode(userToken);
       console.log("Token user ", user);
