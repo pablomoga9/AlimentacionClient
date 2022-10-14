@@ -23,7 +23,7 @@ const Login = () => {
   const onSubmit = async (form) => {
     try {
       console.log(form);
-      const res = await fetch('http://localhost:5000/api/login'||'https://gentle-gorge-77050.herokuapp.com/api/login', {
+      const res = await fetch('https://gentle-gorge-77050.herokuapp.com/api/login', {
         method: 'POST',
         body: JSON.stringify(form),
         headers: {

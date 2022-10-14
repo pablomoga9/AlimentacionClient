@@ -15,7 +15,7 @@ function Nav() {
 
   const handleLogout = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/logout'||'https://gentle-gorge-77050.herokuapp.com/api/logout', { withCredentials: true });
+      const res = await axios.get('https://gentle-gorge-77050.herokuapp.com/api/logout', { withCredentials: true });
       await setUserCheck(null);
       navigate("/")
     }

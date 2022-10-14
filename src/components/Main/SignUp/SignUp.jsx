@@ -11,7 +11,7 @@ const SignUp = () => {
   const onSubmit = async (form) => {
     try {
       console.log(form);
-      const res = await axios.post('http://localhost:5000/api/signup'||'https://gentle-gorge-77050.herokuapp.com/api/signup', form);
+      const res = await axios.post('https://gentle-gorge-77050.herokuapp.com/api/signup', form);
       console.log(res.data);
       navigate('/login')
     }
